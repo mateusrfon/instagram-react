@@ -1,0 +1,424 @@
+body {
+    font-family: 'Roboto';
+    background-color: #fafafa;
+}
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 54px;
+    width: 100vw;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    z-index: 10;
+}
+
+.top-bar .top-content {
+    width: 935px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .top-content .top-logos {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .top-content .top-icons {
+    display: flex;
+    align-items: center;
+}
+
+.insta-icon {
+    font-size: 19.25px;
+    margin-left: 1.38px;
+}
+.msg-icon {
+    font-size: 18px;
+}
+.heart-icon {
+    font-size: 18px;
+    margin-left: 25px;
+}
+.compass-icon {
+    font-size: 18px;
+    margin-left: 25px;
+}
+.profile-icon {
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+.border {
+    width: 1px;
+    height: 22px;
+    margin: 0px 10px;
+    background-color: #dbdbdb;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+input[type=pesquisa], select {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+/* criei esta classe para reduzir o uso de "calc" no feed */
+.content {
+    margin-top: 88px;
+    margin-left: calc(50vw - 467.5px);
+    width: 614px;
+}
+
+.content .stories-bar {
+    height: 118px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    padding-left: 18px;
+    position: relative;
+}
+
+.content .stories-bar .forward-icon {
+    height: 26px;
+    width: 26px;
+    color: #ffffff;
+    position: absolute;
+    right: 9px;
+    top: 46px;
+}
+
+.content .stories-bar .storie {
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    margin-right: 14px;
+}
+
+.content .stories-bar .storie a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .stories-bar .storie-img {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../midia/stories_background.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.profile-img {
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+}
+
+.profile-img-small {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+.content .stories-bar .storie-font {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #262626;
+}
+
+.content .feed-box {
+    margin-top: 24px;
+    margin-bottom: 60px;
+    border: 1px solid #dbdbdb;
+}
+
+.content .feed-box .post-head {
+    height: 61px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content .feed-box .post-head .post-profile {
+    margin-left: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.margin-left-15px {
+    margin-left: 15px;
+}
+
+.eh-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 17px;
+}
+
+.post {
+    width: 100%;
+    height: 612px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.post .forward-icon {
+    height: 26px;
+    width: 26px;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 9px;
+    top: 306px;
+}
+
+.post img {
+    width: 100%;
+}
+
+.vid {
+    width: 100%;
+}
+
+.content .feed-box .post-bottom-icons {
+    height: 38px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+}
+
+.margin-left-18px {
+    margin-left: 18px;
+}
+
+.post-icons {
+    height: 20px;
+    margin-right: 18px;
+}
+
+.content .feed-box .post-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.like-profile {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-left: 17px;
+}
+
+.font300-14px-2 {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.post-bottom span {
+    margin-left: 5px;
+}
+
+.bottom-bar {
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    height: 54px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.bottom-icons {
+    height: 20px;
+    margin: 0px 17px;
+}
+
+.coments-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coments {
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+
+.coment-icon {
+    height: 10px;
+    margin-bottom: 10px;
+    margin-right: 18px;
+}
+
+.coments span{
+    margin-left: 5px;
+}
+
+.addcomment-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.addcomment-box .post-icons {
+    margin-left: 18px;
+}
+
+input[type = coment], select {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.addcomment-box span {
+    margin-right: 18px;
+    margin-left: 18px;
+    color: #b2dffc;
+}
+
+.addcomment-box span:hover {
+    color: #0095f6;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+/* SIDE BAR */
+.side-bar {
+    position: fixed;
+    width: 293px;
+    top: 111px;
+    right: calc(50vw - 467.5px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.side-bar .profile {
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+
+}
+
+.side-bar .sfy {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bar .font500-12px {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.side-bar .font500-14px {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.side-bar .font300-14px {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.suggestion {
+    width: 100%;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggestion .flex {
+    display: flex;
+}
+
+.suggestion .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 11px;
+}
+
+.side-bar .font400-12px {
+    margin-top: 6px;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.end {
+    margin-top: 33px;
+    font-size: 11px;
+    color: #c7c7c7;
+}
+
+.end p {
+    margin-bottom: 18px;
+}
+
+/* MISC */
+.mobile {
+    display: none;
+}
+.c26 {
+    color: #262626;
+}
+.c8e {
+    color: #8e8e8e;
+}
+.c-babyblue {
+    color: #139ef2;
+}
+.black {
+    color: black;
+}
+
+@media (max-width: 935px) {
+    .top-bar .top-content {
+        width: calc(100% - 43.13px);
+        margin-left: 21.38px;
+        margin-right: 21.75px;
+    }
+    .side-bar {
+        display: none;
+    }
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

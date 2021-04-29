@@ -1,0 +1,28 @@
+@media (max-width: 614px){
+    body {
+        overflow: hidden;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .top-bar .top-content .top-logos {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .content {
+        margin-top: 54px;
+    }
+    .content .stories-bar {
+        width: 100%;
+    }
+    .content .feed-box {
+        margin-top: 0px;
+        width: 100vw;
+    }
+    .bottom-bar {
+        display: flex;
+    }
+}
