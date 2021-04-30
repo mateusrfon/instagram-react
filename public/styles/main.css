@@ -147,6 +147,7 @@ input[type=pesquisa], select {
     margin-top: 24px;
     margin-bottom: 60px;
     border: 1px solid #dbdbdb;
+    background-color: #ffffff;
 }
 
 .content .feed-box .post-head {
